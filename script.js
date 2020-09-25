@@ -11,7 +11,7 @@ $(document).ready(function () {
 
         console.log(bandInput)
 
-        let queryUrl = "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist=" + bandInput + "&api_key=" + apiKey + "&format=json"
+        let queryUrl = "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&limit=3&artist=" + bandInput + "&api_key=" + apiKey + "&format=json"
 
         $.ajax({
             url: queryUrl,
