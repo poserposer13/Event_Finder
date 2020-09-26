@@ -1,7 +1,7 @@
 $(document).ready(function () {
     let apiKey = "6776e4163d7073e13c7450202afa0977"
 
-    
+
     $("#music-form").on("submit", function (event) {
 
 
