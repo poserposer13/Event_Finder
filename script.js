@@ -91,7 +91,7 @@ $(document).ready(function () {
                 let artistThreeBio = $("#artist-three-bio");
                 artistThreeBio.html(response.artist.bio.summary);
             })
-
+            
         });
     });
 })
