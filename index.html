@@ -1,86 +1,91 @@
-<!--Frame work from Bulma-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Fairy</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Fairy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 
-    <!--Added the aditional CSS frameworks-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
-        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" src="style.css">
+  <!--Added the aditional CSS frameworks-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" src="style.css">
+  <!--Files necessary for flavicon to show-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/flavicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/flavicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/flavicon/favicon-16x16.png">
+  <link rel="manifest" href="/flavicon/site.webmanifest">
+  <link rel="flavicon" href="/flavicon/favicon.ico">
 </head>
 
 <body>
-    <!--Added navBar from mastializeCSS-->
-    <nav>
-        <div class="navBar">
-            <a class="eventFairyBar">Event Fairy</a>
-            <ul id="directory" class="right hide-on-med-and-down">
-                <li><a href="">Home</a></li>
-                <li><a href="">Favorite Bands</a></li>
-                <li><a href="">Events</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="section">
-        <!--Added Search bar-->
-        <form id="music-form" class="column is-one-quarter is-offset-5">
-            <p>Music Search:</p>
-            <input id="music-search" />
-        </form>
-    </section>
-
-    <div class="row hide" id="card-display-one">
-        <div class="col s12 m6">
-            <div class="card red lighten-2">
-                <div class="card-content white-text">
-                    <span class="card-title" id="artist-name-one"></span>
-                    <p id="artist-one-bio"></p>
-                </div>
-                <div class="card-action">
-                    <a href="#" id="link-artist-one" target="_blank">Events</a>
-                </div>
-            </div>
-        </div>
+  <!--Added navBar from mastializeCSS-->
+  <nav>
+    <div class="navBar">
+      <a class="eventFairyBar">Event Fairy</a>
+      <ul id="directory" class="right hide-on-med-and-down">
+        <li><a href="">Home</a></li>
+        <li><a href="">Favorite Bands</a></li>
+        <li><a href="">Events</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="row hide" id="card-display-two">
-        <div class="col s12 m6">
-            <div class="card red lighten-2">
-                <div class="card-content white-text">
-                    <span class="card-title" id="artist-name-two"></span>
-                    <p id="artist-two-bio"></p>
-                </div>
-                <div class="card-action">
-                    <a href="#" id="link-artist-two" target="_blank">Events</a>
-                </div>
-            </div>
+  <section class="section">
+    <!--Added Search bar-->
+    <form id="music-form" class="column is-one-quarter is-offset-5">
+      <p>Music Search:</p>
+      <input id="music-search" />
+    </form>
+  </section>
+
+  <div class="row hide" id="card-display-one">
+    <div class="col s12 m6">
+      <div class="card red lighten-2">
+        <div class="card-content white-text">
+          <span class="card-title" id="artist-name-one"></span>
+          <p id="artist-one-bio"></p>
         </div>
-    </div>
-
-    <div class="row hide" id="card-display-three">
-        <div class="col s12 m6">
-            <div class="card red lighten-2">
-                <div class="card-content white-text">
-                    <span class="card-title" id="artist-name-three"></span>
-                    <p id="artist-three-bio"></p>
-                </div>
-                <div class="card-action">
-                    <a href="#" id="link-artist-three" target="_blank">Events</a>
-                </div>
-            </div>
+        <div class="card-action">
+          <a href="#" id="link-artist-one" target="_blank">Events</a>
         </div>
+      </div>
     </div>
+  </div>
+
+  <div class="row hide" id="card-display-two">
+    <div class="col s12 m6">
+      <div class="card red lighten-2">
+        <div class="card-content white-text">
+          <span class="card-title" id="artist-name-two"></span>
+          <p id="artist-two-bio"></p>
+        </div>
+        <div class="card-action">
+          <a href="#" id="link-artist-two" target="_blank">Events</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row hide" id="card-display-three">
+    <div class="col s12 m6">
+      <div class="card red lighten-2">
+        <div class="card-content white-text">
+          <span class="card-title" id="artist-name-three"></span>
+          <p id="artist-three-bio"></p>
+        </div>
+        <div class="card-action">
+          <a href="#" id="link-artist-three" target="_blank">Events</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
