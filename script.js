@@ -11,7 +11,7 @@ $(document).ready(function () {
 
         console.log(bandInput)
 
-        let queryUrl = "http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&limit=3&artist=" + bandInput + "&api_key=" + apiKey + "&format=json"
+        let queryUrl = "https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&limit=3&artist=" + bandInput + "&api_key=" + apiKey + "&format=json"
         // This call is to get similar artists to the one that the user inputs
         $.ajax({
             url: queryUrl,
@@ -38,7 +38,7 @@ $(document).ready(function () {
             });
             // This call pulls from last.fm and displays a short bio about the artist thats searched
             $.ajax({
-                url: "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + bandInput + "&api_key=" + apiKey + "&format=json"
+                url: "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + bandInput + "&api_key=" + apiKey + "&format=json"
             }).then(function (response) {
                 console.log(response);
                 let artistOneBio = $("#artist-one-bio");
@@ -61,7 +61,7 @@ $(document).ready(function () {
             });
             // This call pulls from last.fm and displays a short bio about a similar artist that is being searched
             $.ajax({
-                url: "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + similarArtistOne + "&api_key=" + apiKey + "&format=json"
+                url: "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + similarArtistOne + "&api_key=" + apiKey + "&format=json"
             }).then(function (response) {
                 console.log(response);
                 let artistTwoBio = $("#artist-two-bio");
@@ -85,13 +85,13 @@ $(document).ready(function () {
             });
             // This call pulls from last.fm and displays a short bio about a similar artist that is being searched
             $.ajax({
-                url: "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + similarArtistTwo + "&api_key=" + apiKey + "&format=json"
+                url: "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + similarArtistTwo + "&api_key=" + apiKey + "&format=json"
             }).then(function (response) {
                 console.log(response);
                 let artistThreeBio = $("#artist-three-bio");
                 artistThreeBio.html(response.artist.bio.summary);
             })
-
+            
         });
     });
 })
