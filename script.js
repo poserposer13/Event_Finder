@@ -14,23 +14,24 @@ $(document).ready(function () {
 
 })
 
-$(document).on(function () {
-    let apiKey = "50433d5e611ff3beca10cdedf2ad213533cb9b38"
+// https://calendarific.com/api/v2/holiday?api_key=50433d5e611ff3beca10cdedf2ad213533cb9b38&country=US&year=2020
 
-    let queryURL = "https://calendarific.com/api/v2/location?api_key=" + apiKey + "&format=json"
-    $ajax({
-        url: queryURL,
-
+$(document).ready(function () {
+    let calendarApi = "50433d5e611ff3beca10cdedf2ad213533cb9b38"
+    $("#event-calendar").ready(function (){
+        let queryURL = "https://calendarific.com/api/v2/holidays?api_key=" + calendarApi + "&country=US&year=2020"
+        $.ajax({
+            url: queryURL,
+            method: "GET",
+        }).then(function (response) {
+            let responseJSON = JSON.stringify(response);
+            console.log(responseJSON);
+        })
     })
-    $.ajax({
-        url: "https://calendarific.com/api/v2/location?api_key=" + apiKey + "&format=json"
-    
-    })
-    .then(function (response) {
+    /*.then(function (response) {
         console.log(response);
-        let calendar = $("#event-calendar");
-        calendar.html(response)
-    })
+        
+    })*/
 })
 
 
