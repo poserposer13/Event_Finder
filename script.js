@@ -14,7 +14,7 @@ $(document).ready(function () {
 
 })
 
-// https://calendarific.com/api/v2/holiday?api_key=50433d5e611ff3beca10cdedf2ad213533cb9b38&country=US&year=2020
+
 
 $(document).ready(function () {
     let calendarApi = "50433d5e611ff3beca10cdedf2ad213533cb9b38"
@@ -28,10 +28,6 @@ $(document).ready(function () {
             console.log(responseJSON);
         })
     })
-    /*.then(function (response) {
-        console.log(response);
-        
-    })*/
 })
 
 
