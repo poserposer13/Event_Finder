@@ -1,18 +1,13 @@
-body{
+*{
+    background-color: black;
+    border: 1px dashed red;
+}
+
+/* body{
     padding: 0;
     margin: 0px;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #26a3c2;
-}
+    background-color: black;
+} */
 
-body {
-    font-size: 18px;
-    line-height: 27px;
-}
-
-.navBar{
-    background-color: lightslategray;
-    overflow: hidden;
-    float: right;
-}
 
