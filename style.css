@@ -2,17 +2,10 @@ body{
     padding: 0;
     margin: 0px;
     font-family: 'Noto Sans', sans-serif;
-    background-color: #26a3c2;
-}
+    background-color: rgb(255, 255, 255);
+    font-size: medium;
+    }
 
-body {
-    font-size: 18px;
-    line-height: 27px;
+.eventFairyBar{
+    font-size: x-large;
 }
-
-.navBar{
-    background-color: lightslategray;
-    overflow: hidden;
-    float: right;
-}
-
