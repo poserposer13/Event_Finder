@@ -1,13 +1,11 @@
-*{
-    background-color: black;
-    border: 1px dashed red;
-}
-
-/* body{
+body{
     padding: 0;
     margin: 0px;
     font-family: 'Noto Sans', sans-serif;
-    background-color: black;
-} */
+    background-color: rgb(255, 255, 255);
+    font-size: medium;
+    }
 
-
+.eventFairyBar{
+    font-size: x-large;
+}
